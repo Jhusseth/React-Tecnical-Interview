@@ -13,6 +13,7 @@
     "classnames": "^2.3.1",
     "firebase": "^9.6.4",
     "formik": "^2.2.9",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-easy-swipe": "^0.0.22",
@@ -23,6 +24,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,6 +33,7 @@
     "docker:build": "docker build . -t jhusseth/cra-docker",
     "docker:run": "docker run -p 8080:80 jhusseth/cra-docker --name react",
     "docker:stop": "docker rm -f react"
+
   },
   "eslintConfig": {
     "extends": "react-app"
