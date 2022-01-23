@@ -8,14 +8,6 @@ import { ThemeProvider } from './context/ThemeContext';
 import Background from './util/background';
 import Toggle from './components/ThemeToggle';
 
-const Ft = ()=> {
-    return (
-        <div className="flex flex-col w-full mt-3 h-auto">
-            <Footer/>
-        </div>
-    )
-}
-
 ReactDOM.render(
     <StrictMode>
         <ThemeProvider>
