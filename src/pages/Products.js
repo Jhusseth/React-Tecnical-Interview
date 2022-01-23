@@ -12,7 +12,7 @@ export default function Products() {
 
     const [showAdd, setShowAdd] = useState(false);
     const [products, setProducts] = useState([]);
-    const [user, loading, error] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
 
     const fetchProducts = async () => {
         try {
