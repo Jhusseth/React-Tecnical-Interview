@@ -1,5 +1,5 @@
 # Stage 1 - the build process
-FROM node:10.15.3 as build-deps
+FROM node:17-alpine as build-deps
 # Versions
 RUN npm -v
 RUN node -v
