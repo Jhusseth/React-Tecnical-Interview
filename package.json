@@ -14,6 +14,7 @@
     "firebase": "^9.6.4",
     "formik": "^2.2.9",
     "gh-pages": "^3.2.3",
+    "global": "^4.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-easy-swipe": "^0.0.22",
@@ -21,6 +22,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "serve": "^13.0.2",
     "yup": "^0.32.11"
   },
   "scripts": {
@@ -33,7 +35,6 @@
     "docker:build": "docker build . -t jhusseth/cra-docker",
     "docker:run": "docker run -p 8080:80 jhusseth/cra-docker --name react",
     "docker:stop": "docker rm -f react"
-
   },
   "eslintConfig": {
     "extends": "react-app"

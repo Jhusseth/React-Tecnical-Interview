@@ -19,7 +19,7 @@ const Home = () => {
             src={logo}
             alt="Logo"
           />
-          <div className="flex items-center">
+          <div className="flex items-center mr-6">
             <Link
               to={auth.isAuthenticated()?"/login":"/signup"}
               className="text-black-700 mr-6 font-bold"
