@@ -1,0 +1,16 @@
+.top-bar-gradient {
+  height: 4px;
+  background: linear-gradient(
+    318deg,
+    rgb(233, 212, 25) 0%,
+    rgb(228, 231, 24) 100%
+  );
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.nato-sans {
+  font-family: 'Noto Sans JP', sans-serif;
+}
