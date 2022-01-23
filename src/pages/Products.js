@@ -4,13 +4,15 @@ import AddProduct from '../components/products/AddProduct'
 import PageTitle from '../components/common/PageTitle';
 import CardProduct from '../components/products/CardProduct';
 import { query, collection, getDocs} from "firebase/firestore";
-import { db } from "../util/firebase";
+import { auth,db } from "../util/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 
 export default function Products() {
 
     const [showAdd, setShowAdd] = useState(false);
     const [products, setProducts] = useState([]);
+    const [user, loading, error] = useAuthState(auth);
 
     const fetchProducts = async () => {
         try {
@@ -29,7 +31,7 @@ export default function Products() {
 
         fetchProducts();
         
-    }, [])
+    }, [user, loading])
 
     const showAddPanel =()=>{
         setShowAdd(!showAdd)

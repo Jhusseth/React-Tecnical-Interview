@@ -47,6 +47,7 @@ const Login = () => {
         setLoginError(null);
         setTimeout(() => {
           setRedirectOnLogin(true);
+          window.location.reload();
         }, 500);       
       }
     }
@@ -69,7 +70,7 @@ const Login = () => {
 
   return (
     <>
-      {redirectOnLogin && <Navigate to="/products" />}
+      {redirectOnLogin && <Navigate replace to="/products" />}
       <section className="w-full sm:w-1/2 h-screen m-auto p-8 sm:pt-10">
         <GradientBar />
         <Card>
